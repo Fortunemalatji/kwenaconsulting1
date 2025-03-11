@@ -15,8 +15,8 @@
     <header>
         <div class="logo">
             <img src="kwenalogo1.jpg" alt="">
-            
-          
+
+
         </div>
         <nav class="nav-links" id="navLinks">
             <ul>
@@ -24,7 +24,7 @@
                 <li><a href="#quote" class="btn-quote">Get a Quote</a></li>
             </ul>
         </nav>
-        
+
         <div class="menu-icon" id="menuIcon">
             <box-icon name='menu-alt-right'></box-icon>
         </div>
@@ -34,36 +34,199 @@
     <section id="home" class="landing">
         <div class="content">
             <h1>your trusted built environment specialist</h1>
-            <p>We provide expert urban and regional planning solutions to shape sustainable and thriving communities.</p>
+            <p>We provide expert urban and regional planning solutions to shape sustainable and thriving communities.
+            </p>
             <a href="#services" class="btn">Explore Our Services</a>
         </div>
-    
+
     </section>
+    <!-- Add AOS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-down">About Us</h2>
+
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>At <strong>Kwena Town Planning & Built Specialists</strong>, we are dedicated to shaping
+                        sustainable and smart cities through innovative urban planning, infrastructure development, and
+                        architectural excellence.</p>
+                    <p>Our team of experts ensures that every project aligns with environmental sustainability, economic
+                        growth, and social development, creating livable and resilient urban spaces.</p>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="about2.jpg" alt="Urban Planning">
+                </div>
+            </div>
+
+            <div class="mission-vision">
+                <div class="mission" data-aos="zoom-in-up">
+                    <h3>Our Mission</h3>
+                    <p>To design and develop **inclusive, sustainable, and future-ready urban spaces** that balance
+                        functionality, aesthetics, and environmental responsibility.</p>
+                </div>
+                <div class="vision" data-aos="zoom-in-up" data-aos-delay="200">
+                    <h3>Our Vision</h3>
+                    <p>To be the leading urban planning and built environment consultancy, driving innovation in **smart
+                        cities, infrastructure, and sustainable development**.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* About Us Section */
+        .about-section {
+            padding: 100px 20px;
+            background: url("about (2).jpg") no-repeat center center/cover;
+            background-attachment: fixed;
+            text-align: center;
+        }
+
+        /* Section Title */
+        .section-title {
+            font-size: 38px;
+            font-weight: 700;
+            color: #1c3d5a;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        /* About Content */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            justify-content: center;
+            max-width: 1100px;
+            margin: 0 auto 60px;
+        }
+
+        /* About Text */
+        .about-text {
+            width: 50%;
+            text-align: left;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* About Image */
+        .about-image {
+            width: 50%;
+            min-height: 20%;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Mission & Vision Section */
+        .mission-vision {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .mission,
+        .vision {
+            flex: 1;
+            backdrop-filter: blur(15px);
+            /* Blur effect */
+            background: rgba(56, 53, 53, 0.15);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .mission:hover,
+        .vision:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Mission & Vision Titles */
+        .mission h3,
+        .vision h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1c3d5a;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        /* Mission & Vision Text */
+        .mission p,
+        .vision p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-text,
+            .about-image {
+                width: 100%;
+            }
+
+            .mission-vision {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 1000, // Animation speed
+            once: true, // Animations happen only once
+        });
+    </script>
+
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
             <h2>Our Services</h2>
-            <p>We offer expert town planning services to create sustainable, vibrant communities. Explore how we can help shape the future of your town.</p>
+            <p>We offer expert town planning services to create sustainable, vibrant communities. Explore how we can
+                help shape the future of your town.</p>
             <div class="service-cards">
                 <div class="service-card">
                     <i class="fas fa-city"></i>
                     <h3>Urban Design and Master Planning</h3>
-                    <p>We provide comprehensive urban design solutions, crafting long-term plans that integrate functionality, sustainability, and aesthetics.</p>
+                    <p>We provide comprehensive urban design solutions, crafting long-term plans that integrate
+                        functionality, sustainability, and aesthetics.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-building"></i>
                     <h3>Infrastructure Planning</h3>
-                    <p>We design and plan infrastructure systems that support efficient transportation, utilities, and community development.</p>
+                    <p>We design and plan infrastructure systems that support efficient transportation, utilities, and
+                        community development.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-leaf"></i>
                     <h3>Sustainability Consulting</h3>
-                    <p>Our experts help implement environmentally sustainable practices in your town’s development, promoting eco-friendly growth.</p>
+                    <p>Our experts help implement environmentally sustainable practices in your town’s development,
+                        promoting eco-friendly growth.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-users"></i>
                     <h3>Community Engagement</h3>
-                    <p>We foster collaboration with local residents and stakeholders to ensure the community’s needs are met in the planning process.</p>
+                    <p>We foster collaboration with local residents and stakeholders to ensure the community’s needs are
+                        met in the planning process.</p>
                 </div>
             </div>
         </div>
@@ -71,7 +234,7 @@
     <section id="Projects" class="projects">
         <div class="container">
             <h2 class="section-title">Our Latest Projects</h2>
-    
+
             <div class="project">
                 <img src="project1.jpg" alt="Modern Living Room">
                 <div class="project-info">
@@ -80,7 +243,7 @@
                     <a href="#" class="btn">View More</a>
                 </div>
             </div>
-    
+
             <div class="project reverse">
                 <img src="project2.jpg" alt="Minimalist Bedroom">
                 <div class="project-info">
@@ -89,7 +252,7 @@
                     <a href="#" class="btn">View More</a>
                 </div>
             </div>
-    
+
             <div class="project">
                 <img src="project3.jpg" alt="Luxury Office Setup">
                 <div class="project-info">
@@ -98,10 +261,10 @@
                     <a href="#" class="btn">View More</a>
                 </div>
             </div>
-    
+
         </div>
     </section>
-    
+
 
     <section class="team-section">
         <h2>Meet Our Team</h2>
@@ -120,51 +283,303 @@
                 <h3>Ofentse Lebese</h3>
                 <p>Candidate Town Planner</p>
             </div>
-            
+
         </div>
     </section>
-    
-    <footer class="footer">
+
+    <!-- Contact Us Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-down">Contact Us</h2>
+
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form" data-aos="fade-right">
+                    <h3>Get in Touch</h3>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info" data-aos="fade-left">
+                    <h3>Our Office</h3>
+                    <p><strong>Address:</strong> 123 Urban Street, Johannesburg, South Africa</p>
+                    <p><strong>Email:</strong> contact@kwenaplanning.com</p>
+                    <p><strong>Phone:</strong> +27 123 456 7890</p>
+                    <p><strong>Working Hours:</strong> Mon - Fri: 8:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+
+            <!-- Google Map (Optional) -->
+            <div class="map-container" data-aos="fade-up">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.779205869763!2d28.04730571512731!3d-26.2041022834321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9512489f3f3c2d%3A0x8c4f6b3f3f3f3f3!2sJohannesburg%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1633021019895!5m2!1sen!2sza"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CSS Styling -->
+    <style>
+        /* Contact Us Section */
+        .contact-section {
+            padding: 100px 20px;
+            background: linear-gradient(to right, #ffffff, #e9ecef);
+            text-align: center;
+        }
+
+        /* Section Title */
+        .section-title {
+            font-size: 38px;
+            font-weight: 700;
+            color: #1c3d5a;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        /* Contact Content */
+        .contact-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto 60px;
+        }
+
+        /* Contact Form */
+        .contact-form,
+        .contact-info {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-form:hover,
+        .contact-info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-form h3,
+        .contact-info h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1c3d5a;
+            margin-bottom: 20px;
+        }
+
+        /* Form Styling */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #1c3d5a;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #144b6d;
+        }
+
+        /* Contact Info */
+        .contact-info p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Google Map */
+        .map-container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-content {
+                flex-direction: column;
+            }
+
+            .contact-form,
+            .contact-info {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <!-- Initialize AOS Animations -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
         <div class="footer-content">
-            <div class="footer-column">
-                <h3>Quick Links</h3>
+            <div class="footer-logo" data-aos="fade-right">
+                <h3>Kwena Planning</h3>
+                <p>Shaping urban spaces for a better future.</p>
+            </div>
+
+            <div class="footer-links" data-aos="fade-up">
+                <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
 
-            <div class="footer-column">
-                <h3>Contact Information</h3>
-                <p><i class="fa fa-map-marker"></i> 123 Furniture St, Suite 101, Springfield, IL 62701</p>
-                <p><i class="fa fa-phone"></i> +1 (800) 123-4567</p>
-                <p><i class="fa fa-envelope"></i> info@furnituredemo.com</p>
-            </div>
-
-            <div class="footer-column">
-                <h3>Stay Connected</h3>
-                <div class="social-media">
-                    <a href="#" class="social-icon"><box-icon type="logo" name="facebook-square"></box-icon></a>
-                    <a href="#" class="social-icon"><box-icon type='logo' name='twitter'></box-icon></a>
-                    <a href="#" class="social-icon"><box-icon type="logo" name='instagram'></box-icon>
-                    </a>
-                    <a href="#" class="social-icon"><box-icon type="logo" name="facebook-square"></box-icon>
-                    </a>
-                </div>
-                <h4>Subscribe to our newsletter</h4>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" required />
-                    <button type="submit">Subscribe</button>
-                </form>
+            <div class="footer-contact" data-aos="fade-left">
+                <h4>Contact</h4>
+                <p>Email: contact@kwenaplanning.com</p>
+                <p>Phone: +27 123 456 7890</p>
+                <p>Location: Johannesburg, South Africa</p>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2025 KwenaConsulting. All rights reserved.</p>
+            <p>© 2024 Kwena Planning. All Rights Reserved.</p>
         </div>
-    </footer>
+    </div>
+</footer>
+
+<!-- CSS Styling -->
+<style>
+/* Footer */
+.footer {
+    background: #75946d;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Footer Logo */
+.footer-logo h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* Footer Links */
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #f4b400;
+}
+
+/* Footer Contact */
+.footer-contact p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #ddd;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
+
+<!-- Initialize AOS Animations -->
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+
 
 
 
